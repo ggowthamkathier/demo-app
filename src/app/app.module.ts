@@ -9,15 +9,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { HomeComponent } from './home/home.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { SideNavComponent } from './side-nav/side-nav.component';
-import { BookDetailsComponent } from './book-details/book-details.component';
+import {  LoginComponent } from './login-component/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RegistrationComponent } from './registration/registration.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavBarComponent,
-    SideNavComponent,
-    BookDetailsComponent
+    LoginComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +31,8 @@ import { BookDetailsComponent } from './book-details/book-details.component';
     MatSidenavModule,
     MatIconModule,
     MatPaginatorModule,
-    MatCardModule
+    MatCardModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
